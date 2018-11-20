@@ -52,10 +52,12 @@ App.listenForEvents();
     var electionInstance;
     var loader = $("#loader");
     var content = $("#content");
+    var result=$("#result");
 
     loader.show();
     content.hide();
-
+    result.hide();
+    
     // Load account data
     web3.eth.getCoinbase(function(err, account) {
       if (err === null) {
@@ -95,6 +97,7 @@ App.listenForEvents();
       // Do not allow a user to vote
       if(hasVoted) {
         $('form').hide();
+       result.show();
       }
       loader.hide();
       content.show();
