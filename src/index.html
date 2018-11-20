@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Election Results</title>
+    <title>Votr</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,14 +19,24 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container" style="width: 650px;">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="text-center">Election Results</h1>
-          <hr/>
-          <br/>
+
+      <div class="row navi">
+        <div class="col-md-12 ">
+          <h1 class="heading">Votr</h1>
+        </div>
+      </div>
+        <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 half"><img src="images/vote1.jpg" class="voteimg"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6"><p class="heading desc">Secure voting application<br> based on Blockchain.</p></div>
+        </div>
+        <div class="row box">
+        <div class="col-md-12">
+          
           <div id="loader">
-            <p class="text-center">Loading...</p>
+            Loading...
+
+
+            
           </div>
           <div id="content" style="display: none;">
             <table class="table">
@@ -53,7 +64,6 @@
           </div>
         </div>
       </div>
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
